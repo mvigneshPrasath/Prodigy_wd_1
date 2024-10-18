@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Haven | Your Literary Escape</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Novel Haven</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bestsellers">Bestsellers</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Novel Haven</h1>
+                <p>Embark on Your Literary Journey</p>
+                <div class="hero-buttons">
+                    <a href="#bestsellers" class="cta-button">Explore Bestsellers</a>
+                    <a href="#genres" class="cta-button secondary">Browse Genres</a>
+                </div>
+            </div>
+        </section>
+        <section id="bestsellers">
+            <h2>Bestsellers</h2>
+            <div class="book-grid">
+                <div class="book" data-popup="book2">
+                    <div class="book-cover">
+                        <img src="images\The Art Of Fiction.jpg" alt="The Art Of Fiction by John Gardner">
+                    </div>
+                    <div class="book-spine"></div>
+                    <h3>The Art Of Fiction by John Gardner</h3>
+                </div>
+                <div class="book" data-popup="book1">
+                    <div class="book-cover">
+                        <img src="images\dead_souls.jpg" alt="Dead Souls by Sam Riviere">
+                    </div>
+                    <div class="book-spine"></div>
+                    <h3>Dead Souls by Sam Riviere</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="genres">
+            <h2>Explore Genres</h2>
+            <div class="genre-grid">
+                <div class="genre-card" data-popup="fiction">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Fiction</h3>
+                </div>
+                <div class="genre-card" data-popup="non-fiction">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Non-Fiction</h3>
+                </div>
+                <div class="genre-card" data-popup="mystery">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <h3>Mystery</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="authors">
+            <h2>Featured Authors</h2>
+            <div class="author-grid">
+                <div class="author" data-popup="author1">
+                    <img src="images\John Gardner.jpg" alt="John Gardner">
+                    <h3>John Gardner</h3>
+                </div>
+                <div class="author" data-popup="author2">
+                    <img src="images\Sam Riviere.webp" alt="Sam Riviere">
+                    <h3>Sam Riviere</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Novel Haven is your gateway to literary adventures.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#genres">Genres</a></li>
+                    <li><a href="#authors">Authors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Novel Haven. All rights reserved.</p>
+    </footer>
+
+    <div id="popup-overlay" class="popup-overlay"></div>
+    <div id="popup-content" class="popup-content"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
